@@ -10,7 +10,8 @@
 
 
 
-## Clone Project 01 [Live Link](https://fullstack-js-project-clone-01.netlify.app/)
+## Clone Project 01 
+## [Live Link](https://02-clone-shopify.netlify.app/)
 
 
 ### Screenshot
