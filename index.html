@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assest/faivicon.png">
+    <!-- icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>shopify || Clone</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '393px',
+                    md: '724px',
+                    lg: '1440px',
+                },
+                extend: {
+                    colors: {
+                        myred: '#EB4D4B',
+                        LGreen: '#008060',
+                        DGreen: '#004C3F',
+                        bgColor: ' #FBF7ED',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Nav-Bar Area -->
+    <nav class="flex bg-bgColor sticky z-0 shadow-lg  top-0 ">
+        <div class="sm:mx-auto flex bg-">
+            <div class=" bg-bgColor lg:ml-20 sm:h-[2.4rem] sm:my-5">
+                <img class="w-[8.25rem] bg-white" src="./assest/01LOGO.png" alt="Nav_logo">
+            </div>
+            <ul class="hidden md:flex">
+                <li class="mx-[2rem] my-5 cursor-pointer">Start <i class="fa-solid fa-angle-down"></i></li>
+                <li class="mx-[2rem] my-5 cursor-pointer ">Sell <i class="fa-solid fa-angle-down"></i></li>
+                <li class="mx-[2rem] my-5 cursor-pointer ">Market <i class="fa-solid fa-angle-down"></i></li>
+                <li class="mx-[2rem] my-5 cursor-pointer ">Manage <i class="fa-solid fa-angle-down"></i></li>
+            </ul>
+        </div>
+        <div class="flex space-around mr-8 lg:mr-10">
+            <div class="m-1 md:flex sm:justify-center sm:items-center">
+                <a href="#" class="my-5 mx-6 hidden md:flex">Pricing</a>
+                <a href="#" class="my-5 mx-6 hidden md:flex">Leran <i class="fa-solid fa-angle-down my-1 mx-1"></i></a>
+                <a href="#" class="md:my-5 md:mt-[1rem]  sm:my-5 flex md:mx-6 ">Login</a>
+
+
+
+                <button
+                    class="w-[7rem] h-[2.5rem] justify-center items-center my-4 hover:bg-DGreen rounded-lg hover:bg-DGreen  bg-[#008060] text-white hidden  md:flex text-center">Try
+                    for free</button>
+            </div>
+            <div class="mx-5 md:hidden sm:flex">
+                <i class="absolute  top-[1.9rem] cursor-pointer right-4 fa-solid fa-bars"></i>
+                <div>
+                </div>
+    </nav>
+
+    <!-- Hero-Section -->
+
+
+    <div class="hero  mx-2 md:flex sm:h-[45rem]  sm:mx-auto md:mx-1 md:h-[38rem] mb-2">
+
+        <div class="1-L lg:w-[30rem] sm:mt-0 md:mt-[8rem]  sm:justify-center my-10 mx-1">
+            <h1 class="text-DGreen sm:mx-auto md:mx-[5rem] text-bold text-5xl sm:mx-[40px]">The easiest way to sell
+                online in India</h1>
+            <p class="my-6 sm:mx-[10px] md:mx-[5rem] text-2xl ">Try one of the most powerful platforms on the market for
+                free. No technical knowledge needed.</p>
+            <div class="md:mx-[5rem]  md:mx-1 sm:ml-8  mb-4">
+                <input type="email" id="email" name="email" placeholder="Email"
+                    class="w-[20rem] bg-white rounded border border-gray-300 focus:border-DGreen focus:DGreee focus:DGreee text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <button
+                    class="w-[7rem] h-[2.5rem] justify-center items-center my-4 hover:bg-DGreen rounded-lg hover:bg-DGreen  bg-[#008060] text-white text-center">Try
+                    for free</button>
+            </div>
+            <p class="my-6  sm:mx-[10px] md:mx-[5rem] text-sm">Try Shopify free for 14 days, no credit card required. By
+                entering your email, you agree to receive marketing emails from Shopify.</p>
+        </div>
+
+        <div class="my-[2.3rem] md:ml-20 sm:mx-auto ">
+            <img class="md:w-[62rem]" src="./assest/01Hero.webp" alt="HeroImg">
+        </div>
+
+    </div>
+
+
+    <!-- Section 0_2_____________________________ -->
+
+
+    <div class="bg-DGreen md:h-[40rem] sm:h-[80rem] sm:mx-auto">
+
+        <div class="2-Top sm:my-[5rem] md:my-[2rem] md:mx-[8rem] bg-DGreen">
+            <h1 class="text-white sm:mx-10 md:mx-auto bg-DGreen sm:mx-auto pt-10 pb-10 text-5xl">Bring your business
+                online</h1>
+            <p class="text-white sm:mx-10 md:mx-auto py-5 text-[1.2rem]">Create an ecommerce website backed by powerful
+                tools that help you find customers, drive sales, and manage your day-to-day.</p>
+            <span
+                class=" sm:mx-10 md:mx-auto cursor-pointer text-white text-base transition duration-150 ease-out ease-in">
+                Explore More examples
+                <a href="#home" class=" sm:mx-3 fa-solid fa-arrow-right-long"></a>
+            </span>
+        </div>
+
+        <div class="2-Bottom grid   sm:grid-cols-2 md:grid-cols-5 sm:items-center  md:mx-[8rem]">
+            <div class="md:mx-5 sm:ml-[1rem]">
+                <img class="sm:w-[11rem] " src="./assest/02Sec-01.webp" alt="3Sec">
+                <h2 class=" text-white   my-2">FOOD & Drink</h2>
+                <p class=" text-white   my-2">Blue tokai</p>
+            </div>
+
+            <div class="md:mx-5 sm:ml-[1rem]">
+                <img class="sm:w-[11rem]" src="./assest/02Sec-02.webp" alt="3Sec">
+                <h2 class="text-white   my-2">JEWELRY</h2>
+                <p class="text-white   my-2">Quirksmith</p>
+            </div>
+
+            <div class="md:mx-5 sm:ml-[0.6rem]">
+                <img class="sm:w-[11rem]" src="./assest/02Sec-03.webp" alt="3Sec">
+                <h2 class="text-white   my-2">ELECTEONICS</h2>
+                <p class="text-white   my-2">Crossbeats</p>
+            </div>
+
+            <div class="md:mx-5 sm:ml-[0.6rem]">
+                <img class="sm:w-[11rem]" src="./assest/02Sec-04.webp" alt="3Sec">
+                <h2 class="text-white   my-2">BEAUTY</h2>
+                <p class="text-white   my-2">Mcaffeine</p>
+            </div>
+
+            <div class="md:mx-5 sm:hidden md:grid">
+                <img class="sm:w-[11rem]" src="./assest/02Sec-05.webp" alt="3Sec">
+                <h2 class="text-white   my-2">FASHION</h2>
+                <p class="text-white   my-1">Bunaai</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Section 03 -->
+
+    <div class="bg-DGreen md:h-[30rem] sm:h-[95rem] sm:mx-auto">
+
+        <h1 class="text-3xl text-white mx-[8rem] py-[4rem] ">
+            Take the best path forward
+        </h1>
+
+        <div class="2-Bottom grid gap-4 md:mx-[8rem] sm:mx-12  sm:grid-cols-1 md:grid-cols-4 md:mx-1 sm:ml-[8rem]">
+
+            <div class=" sm:w-[16rem] sm:h-[18rem]">
+                <span><i class="fa-duotone text-[#fff] fa-boxes-packing"></i></i></span>
+
+                <h1 class="text-[#fff] lg:text-3xl sm:text-2xl my-5">Start an online business</h1>
+                <p class="text-[#fff]">
+                    Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.
+                </p>
+            </div>
+
+            <div class="sm:w-[16rem] sm:h-[18rem]">
+                <span class="text-white"><i class="fa-thin fa-briefcase"></i></span>
+                <h1 class="text-[#fff] lg:text-3xl sm:text-2xl my-5">Move your business online</h1>
+                <p class="text-white">
+                    Turn your retail store into an online store and keep serving customers without missing a beat.
+                </p>
+            </div>
+
+            <div class="  sm:w-[16rem] sm:h-[18rem]">
+                <span class="text-white"><i class="fa-solid fa-arrows-spin"></i></span>
+                <h1 class="text-[#fff] lg:text-3xl sm:text-2xl my-5">Switch to Shopify</h1>
+                <p class="text-white">
+                    Bring your business to Shopify, no matter which ecommerce platform you’re currently using.
+                </p>
+
+            </div>
+
+
+            <div class=" sm:w-[16rem] sm:h-[18rem]">
+                <span class="text-white">
+                    <i class="fa-regular fa-users"></i>
+                </span>
+                <h1 class="text-[#fff] lg:text-3xl sm:text-2xl my-5">Hire a Shopify expert</h1>
+                <p class="text-white">
+                    Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Section Four -->
+
+    <div class="sm:flex sm:flex-col items-center sm:my-[10rem] justify-center">
+        <h1 class="md:text-4xl sm:text-3xl my-5">With you wherever you’re going</h1>
+        <p class="md:w-[40rem] md:text-xl text-center sm:w-[20rem]">
+            One platform with all the ecommerce and point of sale features you need to start, run, and grow your
+            business.
+        </p>
+    </div>
+
+    <!-- Video 05 -->
+
+    <div class="video mx-2 md:flex md:h-[40rem]">
+        <div class="sm:mx-auto">
+            <div class="04-L">
+                <video src="./Video/01Sec-3.webm" type="video/webm" autoplay>
+                    xyz
+                </video>
+            </div>
+        </div>
+        <div class="04-R md:my-10 sm:mx-10">
+            <h1 class="text-3xl sm:my-3 md:my-4">Sell everywhere</h1>
+            <p class="sm:items-center sm:my-3">
+                Use one platform to sell products to anyone, anywhere in person with Point of Sale and online through your website, social media, and online marketplaces.
+            </p>
+            <button class="videoL text-DGreen text-xl"> Explore ways to sell </button> <i class="videoL cursor-pointer mx-2 fa-solid fa-arrow-right ;hover:ease-out focus:ease-in-out"></i>
+        </div>
+    </div>
+
+
+    <!-- Sectio 06 -->
+
+    <div class="sm:mx-10 mx-2  md:flex md:h-[40rem]">
+        
+        <div class="05-R flex sm:flex-col justify-center md:my-5">
+            <h1 class="text-3xl sm:my-3 mt-10 sm:mx-auto md:ml-[2rem] md:my-4 ">Market your business</h1>
+            <p class="sm:items-center sm:mx-auto md:ml-[2rem] sm:my-3">
+                Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.
+            </p>
+            <button class=" text-DGreen text-xl md:mr-[20rem]"> Explore how to market your business <i class="videoL cursor-pointer  fa-solid fa-arrow-right ;hover:ease-out focus:ease-in-out"></i> </button> 
+        </div>
+
+        <div class="sm:mx-auto">
+            <div class="04-L">
+                <img src="./assest/04Sec-01.webp" alt="sec-5">
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 07 -->
+
+    <div class="video mx-2 md:flex mx-1 my-1 md:h-[30rem]">
+        <div class="sm:mx-auto">
+            <div class="04-L">
+                <img class="md:w-[45rem] shadow-lg sm:w-auto" src="./assest/05Sec-01.PNG">
+            </div>
+        </div>
+        <div class="07-R md:my-10">
+            <h1 class="text-3xl sm:ml-[2rem] sm:my-3 md:ml-[3rem] ">Manage everything</h1>
+            <p class="sm:items-center sm:ml-[2rem] md:ml-[3rem] sm:my-3">
+                Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.
+            </p>
+            <button class="sm:ml-[2rem] md:ml-[3rem] text-DGreen text-xl"> Explore how to manage your business </button> <i class="videoL cursor-pointer mx-2 fa-solid fa-arrow-right ;hover:ease-out focus:ease-in-out"></i>
+        </div>
+    </div>
+
+
+    <!-- Secction 08 -->
+
+    <div class=" md:h-[35rem]  my-2 sm:h-[40rem] bg-[#F3FCF4]">
+
+
+         <h1 class=" sm:my-[3rem] pt-[3rem] md:w-[30rem] sm:w-[25rem]  md:ml-10 text-DGreen  sm:text-3xl sm:mx-[4rem]">Explore more from Shopify in India
+        </h1>
+
+        <div class="sm:mx-10 mx-2 bg-white md:flex md:h-[20rem]">
+            
+           
+            <div class="08-R md:w-1/2  bg-white flex sm:flex-col justify-center md:my-5">
+
+                <h1 class="py-3 text-xl font-bold md:ml-[2rem]">START</h1>
+
+                <h1 class="text-3xl sm:my-3 mt-10 sm:mx-auto md:ml-[2rem] md:my-4 ">Launch your store with the help of a Shopify Expert</h1>
+                <p class="sm:items-center  sm:mx-auto md:ml-[2rem] sm:my-3">
+                    Find hundreds of experts from India ready to help you get your store up and running, from choosing a theme to building a fully customized site.
+                </p>
+                <button class=" text-DGreen my-5 text-xl md:mr-[18rem]">Browser Experts in india <i class="videoL cursor-pointer  fa-solid fa-arrow-right ;hover:ease-out focus:ease-in-out"></i> </button> 
+            </div>
+    
+            <div class="sm:mx-auto">
+                <div class="08-L">
+                    <img src="./assest/06Sec-01.webp" alt="sec-8">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 09 -->
+
+
+    <div class="md:mx-[10rem]  px-4 my-2 mx-2 sm:mt-[3rem]">
+        <h1 class="md:text-4xl sm:text-3xl py-5 md:w-1/2 ">
+            Empowering independent business owners everywhere
+        </h1>
+        <h1 class="md:w-1/2 md:text-2xl py-4 sm:text-xl">
+            Millions of businesses in <span class="font-bold">175 countries</span> around the world have made over <span class="font-bold"> $496 billion USD</span> in sales using Shopify.
+        </h1>
+        <button class=" text-DGreen py-3 my-3 text-xl md:mr-[20rem]"> Learn more about Shopify <i class="videoL cursor-pointer  fa-solid fa-arrow-right ;hover:ease-out focus:ease-in-out"></i> </button> 
+    </div>
+
+    <!-- Section 10 glob img -->
+
+    <div class="sm:mx-[1rem]  md:mx-[5rem] my-5 ">
+        <img class="mx-auto " src="./assest/07Sec01-.png" alt="glob">
+    </div>
+</div>
+    <!-- Section 11 -->
+
+
+    <div class="grid md:grid-cols-2  my-[2rem] mx-2 flex" >
+
+        
+           <div class="">
+            <img class="md:mx-10 md:mt-[5rem] " src="./assest/07Sec-021.jpg" alt="08Image">
+           </div>
+
+            <div class="bg-emerald-900 md:mt-[5rem] md:py-0 sm:py-[4rem] mx-2  md:flex md:flex-col md:justify-center md:items-center ">
+                <h1 class="md:ml-[10rem] sm:my[3rem] sm:mx-auto text-3xl text-center text-white w-[22rem]">
+                    “Shopify was my knight in shining armor when I exhausted every other possibility of getting my online store up and running. It was stunningly easy to use, with more features and plug-ins that I didn’t even know I wanted.”
+                </h1>
+                <img class="mx-1 sm:py-[2rem] sm:mx-auto" src="./assest/07Sec-03.png" alt="08Image02"/>
+            </div>
+   
+    </div>
+
+
+
+
+    <!-- Section 12th -->   
+
+    <div class="md:mx-[2rem] md:grid-cols-7 sm:mx-auto md:py-[4rem] sm:grid-cols-2  grid">
+
+        <img class="mx-auto sm:py-[2rem]" src="./assest/08Sec-01.png" alt="Sec-12">
+        <img class="mx-auto sm:py-[2rem]" src="./assest/08Sec-02.png" alt="Sec-12">
+        <img class="mx-auto sm:py-[2rem]" src="./assest/08Sec-3.png" alt="Sec-12">
+        <img class="mx-auto sm:py-[2rem]" src="./assest/08Sec-4.webp" alt="Sec-12">
+        <img class="mx-auto sm:py-[2rem]" src="./assest/08Sec-5.webp" alt="Sec-12">
+        <img class="mx-auto sm:py-[2rem]" src="./assest/08Sec-06.png" alt="Sec-12">
+        <img class="mx-auto sm:py-[2rem]" src="./assest/08Sec-07.png" alt="Sec-12">
+
+    </div>
+
+
+    <!-- Section 13th -->
+
+    <div class="md:[40rem]">
+
+        <!-- Left Section -->
+        <div class="sm:mt-[5rem] md:inline-block">
+            <h1 class=" md:inline-block sm:text-3xl md:text-5xl md:w-[35rem] sm:text-2xl sm:mx-auto md:mx-10">Get the help you need, every step of the way</h1>
+        </div>
+        <div class="grid sm:grid-cols-1 md:grid-cols-2">
+            
+            <div class='bg-bgColor  grid sm:subgrid-cols-1 md:grid-cols-2 '>
+               
+                <div class=" sm:mx-auto md:mx-[5rem] mt-[2rem]">
+                    <h1 class="sm:text-xl font-bold sm:my-[0.6rem]">Shopify support</h1>
+                    <p class="text-base  sm:my-[0.4rem] md:my-[1rem]">
+                        Contact support 24/7, whether you’re troubl-eshooting issues or looking for business advice.
+                    </p>
+                    <button class="text-DGreen font-bold">Contact Support 
+                        <i class="cursor-pointer  fa-solid fa-arrow-right "></i>
+                    </button>
+                </div>
+    
+                <div class="sm:mx-auto md:mx-[5rem] mt-[2rem]">
+                    <h1 class="sm:text-xl font-bold sm:my-[0.6rem]">Shopify App Store</h1>
+                    <p class="text-base  sm:my-[0.4rem] md:my-[1rem]">
+                         Add features and functionality to your business with 6,000+ apps that integrate directly with Shopify.
+                    </p>
+    
+                    <button class="text-DGreen font-bold">Visit the shopify App store
+                        <i class="cursor-pointer  fa-solid fa-arrow-right "></i>
+                    </button>
+                </div>
+    
+                <div class="sm:mx-auto md:ml-[5rem] mt-[1rem]">
+                    <h1 class="sm:text-xl font-bold sm:my-[0.6rem]">Shopify Experts Marketplace</h1>
+                    <p class="text-base  sm:my-[0.4rem]  md:my-[0.6rem]">
+                        Hire a Shopify expert to help you with everything from store setup to SEO.
+                    </p>
+                    <button class="text-DGreen font-bold">
+                        Explore the Shopify Experts mArketplace
+                        <i class="cursor-pointer  fa-solid fa-arrow-right "></i>
+ 
+                    </button>
+                </div>
+    
+            </div>
+
+            <div>
+                <img src="./assest/09Sec-01.webp" alt="last part">
+            </div>
+        
+        </div>
+    </div>
+
+
+    <!-- Section 14th -->
+
+
+    <div class="justify-center items-center sm:flex sm:flex-col sm:my-[5rem]">
+        <h1 class="text-2xl sm:my-[1.5rem] ">Start your business journey with Shopify</h1>
+        <p class="text-black/[1] md:w-[40rem] text-center">
+            Try Shopify for free, and explore all the tools and services you need to start, run, and grow your business.
+        </p>
+        <button
+            class="w-[7rem] h-[2.5rem] justify-center items-center my-4 hover:bg-DGreen rounded-lg hover:bg-DGreen  bg-[#008060] text-white  md:flex text-center shadow-lg">
+            Tryfor free
+        </button>
+    </div>
+
+
+    <!-- Footer area -->
+    <footer class="bg-DGreen sm:h-[55rem] md:h-[33rem] sm:mx-[0.625rem]">
+
+        <div class="sm:mx-[2rem] md:mx-[5rem]">
+            <ul class="md:flex sm:flex sm:justify-center md:justify-start sm:items-center sm:text-center ">
+                <li class="text-white sm:mx-[0.5rem] cursor-pointer  mx-[2rem] py-[1rem] font-bold">About</li>
+                <li class="text-white sm:mx-[0.5rem] cursor-pointer  mx-[2rem] py-[1rem] font-bold">Careers</li>
+                <li class="text-white sm:mx-[0.5rem] cursor-pointer  mx-[2rem] py-[1rem] font-bold">Press and Media</li>
+                <li class="text-white sm:mx-[0.5rem] cursor-pointer  mx-[2rem] py-[1rem] font-bold">Shopify</li>
+                <li class="text-white sm:mx-[0.5rem] cursor-pointer  mx-[2rem] py-[1rem] font-bold">Sitemap</li>
+            </ul>
+            <hr class="sm:mx-auto text-white/[.6]">
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-6 sm:my-[2rem] ">
+
+                <!-- One -->
+                <div class="text-white">
+                    <h1 class="font-bold">ONLINE STORE</h1>
+                    <h2>Sell online</h2>
+                    <h2>Examples</h2>
+                    <h2>Website builder</h2>
+                    <h2>Online retail</h2> 
+                </div>
+
+                <!-- two -->
+                <div class="text-white sm:mt-[0.6rem] " >
+                    <h2>Ecommerce website</h2>
+                    <h2>Domain names</h2>
+                    <h2>Themes</h2>
+                    <h2>Shopping cart</h2>
+                    <h2>Ecommerce hosting</h2>
+                </div>
+
+                <!-- Three  -->
+                <div class="text-white sm:mt-[0.6rem] " >
+                    <h2>Mobile Commerce</h2>
+                    <h2>Ecommerce software</h2>
+                    <h2>Online store builder</h2>
+                    <h2>Dropshipping Bussiness</h2>
+                    <h2>Store themes</h2>
+                </div>
+
+                <!-- Four  -->
+               <div class="text-white" >
+                <h1 class="font-bold my-[0.6rem]">POINT OF SALE</h1>
+                <h2>Point of sale</h2>
+                <h2>Features</h2>
+               </div> 
+
+               <!-- Five -->
+
+               <div class="text-white" >
+                <h1 class="font-bold my-[0.6rem]">SUPPORT</h1>
+                <h2>24/7 support</h2>
+                <h2>Shopify Help Center</h2>
+                <h2>Shopify Help Center</h2>
+                <h2>API documentation</h2>
+                <h2>Free tools</h2>
+                <h2>Free stock photos</h2>
+                <h2>Websites for sale</h2>
+                <h2>Logo Maker</h2>
+                <h2>Business name generator</h2>
+                <h2>Research</h2>
+                <h2>Legal</h2>
+               </div>
+
+               <!-- SIX -->
+
+               <div class="text-white" >
+                    <h1 class="font-bold my-[0.6rem]">SHOPIFY</h1>
+                    <h2>Contact</h2>
+                    <h2>Partner program</h2>
+                    <h2>Affiliate program</h2>
+                    <h2>App developers</h2>
+                    <h2>Investors</h2>
+                    <h2>Blog topics</h2>
+                    <h2>Community Events</h2>
+               </div>
+
+
+            </div>
+        </div>
+
+        <hr>
+
+      <div class="sm:mx-[3rem] md:mx-[8rem] grid sm:grid-cols-1 md:grid-cols-2 md:place-content-center ">
+
+        <div class="sm:mt-[2rem]">
+            <i class="fa-brands mx-5 text-white cursor-pointer fa-facebook"></i>
+            <i class="fa-brands mx-5 text-white cursor-pointer fa-twitter"></i>
+            <i class="fa-brands mx-5 text-white cursor-pointer fa-youtube"></i>
+            <i class="fa-brands mx-5 text-white cursor-pointer fa-instagram"></i>
+            <i class="fa-brands mx-5 text-white cursor-pointer fa-linkedin"></i>
+            <i class="fa-brands mx-5 text-white cursor-pointer fa-pinterest"></i>
+        </div>
+
+        <div class="sm:mt-[2rem] flex">
+
+            <h1 class="mx-[0.5rem] text-white cursor-pointer">Terms of Service </h1>
+            <h1 class="mx-[0.5rem] text-white cursor-pointer">Privacy Policy</h1>
+            <h1 class="mx-[0.5rem] text-white cursor-pointer"><i class="fa-solid fa-globe"></i> India <i class="fa-solid fa-caret-down"></i></h1>
+        </div>
+
+        </div>
+
+      
+
+    </footer>
+</body>
+    
+
+    
+
+</html>

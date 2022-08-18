@@ -1,0 +1,33 @@
+
+
+
+/* Universal */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.hero{
+    background-color: #FBF7ED;
+}
+
+.fa-arrow-right-long
+{
+    transition: width 0.5;
+transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+nav{
+   
+        background-color: #fff !important;
+        transition: background-color 200ms linear;
+      
+}
+
+.videoL{
+    fill: currentColor;
+    transform: translateX(0);
+    transition: transform 300ms cubic-bezier(0.4, 0.22, 0.28, 1);
+}
