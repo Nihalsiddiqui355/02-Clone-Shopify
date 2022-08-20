@@ -11,7 +11,7 @@
 
 
 ## Clone Project 01 
-## [Live Link]https://02-clone-shopify.netlify.app/)
+## [Live Link](https://02-clone-shopify.netlify.app/)
 
 
 ### Screenshot
